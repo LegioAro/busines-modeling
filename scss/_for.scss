@@ -1,0 +1,144 @@
+.for {
+    color: #000;
+    position: relative;
+    overflow: hidden;
+
+    &__wrapper {
+        padding: 120px 0 140px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__items {
+        margin-top: 115px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 96px;
+    }
+
+    &__item {
+        max-width: 330px;
+        width: 100%;
+        position: relative;
+        padding: 60px 25px 40px;
+        background: #ffffff;
+        box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.07);
+    }
+
+    &__item-num {
+        position: absolute;
+        font-weight: 800;
+        font-size: 103.385px;
+        color: #cf465a;
+        top: -65px;
+        left: 28px;
+    }
+
+    &__item-text {
+        line-height: 145%;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__decor1 {
+        max-width: 578px;
+        top: 60px;
+        left: 170px;
+    }
+
+    &__decor2 {
+        max-width: 644px;
+        bottom: 70px;
+        right: 190px;
+    }
+
+    &__decor3 {
+        max-width: 250px;
+        left: 120px;
+        bottom: 120px;
+    }
+
+    &__decor4 {
+        max-width: 200px;
+        top: 130px;
+        right: 100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .for {
+        &__decor1 {
+            max-width: 378px;
+            left: 30px;
+        }
+
+        &__decor2 {
+            max-width: 444px;
+            right: 50px;
+        }
+
+        &__decor3 {
+            max-width: 250px;
+            left: 120px;
+            bottom: 320px;
+        }
+
+        &__decor4 {
+            max-width: 200px;
+            top: 230px;
+            right: 100px;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .for {
+        &__items {
+            grid-gap: 50px;
+            grid-row-gap: 90px;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .for {
+        &__wrapper {
+            padding-bottom: 50px;
+        }
+        &__items {
+            flex-wrap: nowrap;
+            grid-gap: 0;
+            width: 100%;
+            margin-top: 50px;
+            flex-direction: column;
+        }
+        &__item {
+            margin: 60px 10px 60px;
+            max-width: 100%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        &__decor2 {
+            display: none;
+        }
+
+        &__decor3 {
+            max-width: 200px;
+            left: 10px;
+            bottom: 40px;
+        }
+
+        &__decor4 {
+            max-width: 200px;
+            top: 230px;
+            right: 10px;
+        }
+    }
+}

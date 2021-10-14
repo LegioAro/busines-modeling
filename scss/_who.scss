@@ -1,0 +1,134 @@
+.who {
+    color: #000;
+    background-image: url(../img/who/who_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        padding-top: calc(50px + (120 - 50) * ((100vw - 320px) / (1920 - 320)));
+        padding-bottom: calc(50px + (120 - 50) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    &__list-wrapper {
+        margin-top: 50px;
+    }
+
+    &__list-title {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #cf465a;
+        margin-bottom: 28px;
+    }
+
+    &__list-title-img {
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #f5b45e;
+        overflow: hidden;
+        margin: 0 auto 50px;
+        display: none;
+        img {
+            object-position: top;
+            transform: translateX(20px) translateY(10px);
+        }
+    }
+
+    &__list-block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__list-items {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    &__list-item {
+        margin-bottom: 38px;
+        display: flex;
+        align-items: flex-start;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__list-item-decor {
+        width: 100%;
+        max-width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #f5b45e;
+        margin-right: 23px;
+    }
+
+    &__list-item-text {
+        font-size: 16px;
+        line-height: 145%;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .task {
+        &__wrapper {
+            padding: 120px 0;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .who {
+        &__decor {
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .who {
+        &__list-title-img {
+            display: flex;
+        }
+        &__decor {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .who {
+        &__list-block {
+            flex-direction: column;
+        }
+        &__list-items {
+            max-width: 100%;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &__list-item {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
