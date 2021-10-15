@@ -109,6 +109,7 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
   font-size: 25px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .title {
@@ -1663,5 +1664,121 @@ input::-webkit-inner-spin-button {
   .result__about-items {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.form {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+  padding: 70px 50px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  display: none;
+  min-height: 609px;
+}
+
+.form__title {
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  font-weight: 500;
+  line-height: 145%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.form__text span {
+  font-weight: 600;
+}
+
+.form__input-block {
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form__input:last-child {
+  margin-bottom: 0;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.form__input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.form__input::placeholder {
+  font-size: 14px;
+  color: #000;
+}
+
+.form__decor {
+  width: 100%;
+  max-width: 150px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.form .btn {
+  color: #fff;
+  max-width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+}
+
+.fancybox__content > .carousel__button.is-close {
+  top: -70px !important;
+  right: -150px !important;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fancybox__slide {
+  padding: 64px 10px;
+}
+
+@media (max-width: 850px) {
+  .fancybox__content > .carousel__button.is-close {
+    right: 0px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .form {
+    padding: 70px 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form__text {
+    font-size: 14px;
   }
 }

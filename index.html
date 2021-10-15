@@ -7,17 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Modeling</title>
 
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+
+    <form id="form" class="form" action="">
+        <div class="form__title">Оставьте свои данные ниже </div>
+        <div class="form__text">и в течении 30 секунд я пришлю Вам подарок:
+            🎓<span> мой мини-курс</span> «Личная Эффективность и Стратегическое Планирование»</div>
+        <div class="form__input-block">
+            <input type="text" name="name" value="" placeholder="Имя" required class="form__input name">
+            <input type="text" name="email" value="" placeholder="Email" required class="form__input mail">
+            <input type="number" name="tel" value="" placeholder="Телефон" required class="form__input">
+        </div>
+        <button class="btn">ЗАБРАТЬ ПОДАРОК</button>
+        <div class="form__decor">
+            <img src="img/for/cloud4.png" alt="">
+        </div>
+    </form>
 
     <header class="header">
         <div class="container">
@@ -45,7 +63,7 @@
                             <div class="header__info-text">
                                 Как получать сотни горячих кандидатов в бизнес через свою онлайн-школу.
                             </div>
-                            <div class="btn">
+                            <div data-fancybox data-src="#form" class="btn">
                                 Пройти спринт
                             </div>
                         </div>
@@ -194,7 +212,7 @@
                 <div class="task__text">У вас есть все необходимые ресурсы, чтобы упаковать экспертность и запустить
                     сильную онлайн-школу.
                     Используйте их грамотно — приходите на Telegram-спринт.</div>
-                <div class="btn">Пройти спринт</div>
+                <div data-fancybox data-src="#form" class="btn">Пройти спринт</div>
             </div>
         </div>
     </section>
@@ -435,7 +453,7 @@
                                 признание и самореализацию без
                                 сверхусилий? <span>Присоединяйтесь</span></p>
                         </div>
-                        <div class="btn">Пройти спринт</div>
+                        <div data-fancybox data-src="#form" class="btn">Пройти спринт</div>
                     </div>
                 </div>
                 <div class="result__about">
@@ -513,7 +531,7 @@
                                 <div class="pack__item-btn-title">Цена</div>
                                 <div class="pack__item-btn-sum">Х000 руб</div>
                             </div>
-                            <div class="btn">Купить</div>
+                            <div data-fancybox data-src="#form" class="btn">Купить</div>
                         </div>
                     </div>
                     <div class="pack__item">
@@ -557,7 +575,7 @@
                                 <div class="pack__item-btn-sum">Х000 руб</div>
 
                             </div>
-                            <div class="btn">Купить</div>
+                            <div data-fancybox data-src="#form" class="btn">Купить</div>
                         </div>
                     </div>
                     <div class="pack__item">
@@ -605,7 +623,7 @@
                                 <div class="pack__item-btn-sum">Х000 руб</div>
 
                             </div>
-                            <div class="btn">Купить</div>
+                            <div data-fancybox data-src="#form" class="btn">Купить</div>
                         </div>
                     </div>
                 </div>
@@ -649,8 +667,10 @@
         </div>
     </footer>
 
+    <script src="js/form.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
