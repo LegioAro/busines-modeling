@@ -112,7 +112,7 @@
 
     &__about-item-title {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 18px;
         color: #6fc4eb;
         margin-bottom: 5px;
     }
@@ -121,7 +121,9 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 145%;
-        text-decoration-line: line-through;
+        span {
+            color: #cf465a;
+        }
     }
 
     .btn {

@@ -1577,7 +1577,7 @@ input::-webkit-inner-spin-button {
 
 .result__about-item-title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   color: #6fc4eb;
   margin-bottom: 5px;
 }
@@ -1586,8 +1586,10 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   font-size: 14px;
   line-height: 145%;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+}
+
+.result__about-item-text span {
+  color: #cf465a;
 }
 
 .result .btn {
